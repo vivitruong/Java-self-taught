@@ -100,3 +100,25 @@ int remainder = 100 % 3;    // remainder is 1
 remainder = 100 % 13;       // remainder is 9
 int i = 3;
 int result = remainder % i; // result is 0
+
+## More operators
+
+## Assignment =
+int teams = 8;                                               // assign the value 8 to the variable teams
+int playersPerTeam = 12;                                     // assign the value 12 to the variable playersPerTeam
+int coachesPerTeam = 2;                                      // assign the value 2 to the variable coachesPerTeam
+int totalPeople = teams * (playersPerTeam + coachesPerTeam); // assign the value of the expression to totalPeople
+
+## Increment, ++
+The increment operator adds one to a numeric value.
+
+int daysSinceAnAccident = 27;
+daysSinceAnAccident++;
+System.out.println(daysSinceAnAccident); // 28
+
+## Decrement, --
+The decrement operator subtracts one from a numeric value.
+
+int daysUntilHoliday = 64;
+daysUntilHoliday--;
+System.out.println(daysUntilHoliday); // 63
