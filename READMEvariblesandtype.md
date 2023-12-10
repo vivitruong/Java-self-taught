@@ -163,3 +163,15 @@ boolean result = true || false; // result is true
 result = false || false;        // result is false
 result = false || true;         // result is true
 result = true || true;          // result is true
+
+### Not: !
+
+Produces a new value from one boolean expression. If the operand after the ! is true, the operation is false. Otherwise it's true. Summarized: it makes true values false and false values true. It "flips" or "reverses" the value.
+
+boolean result = !true; // result is false
+result = !false;        // result is true
+
+boolean yes = true;
+boolean no = false;
+boolean result = !(yes && no || (yes || true)); // result is false
+result = !yes && no || (yes || true);           // result is true
