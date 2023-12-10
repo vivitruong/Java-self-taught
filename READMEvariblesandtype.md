@@ -59,3 +59,29 @@ d = lng; // a long fits in a double
 // i = f;   // compiler error: cannot convert from float to int
 // f = d;   // compiler error: cannot convert from double to float
 // lng = d; // compiler error: cannot convert from double to long
+
+## Operators
+### Addition +
+Produces a new value by adding the values to the left and right of the + symbol. (The values are called operands.)
+
+float sum = 3.55f + 0.3f; // sum is 3.85
+float f = -0.33f;
+float result = sum + f; // result is 3.52
+
+### Subtraction -
+
+Produces a new value by subtracting the value on the right of the - from the value on the left. (The values are called operands.)
+
+double value = 9.22 - 1.1; // value is 8.12
+double d = 3.32;
+double result = value - d; // result is 4.8
+
+### Multiplication: *
+
+Produces a new value by multiplying the operand on the left of the * with the operand on the right.
+
+int product = 20 * 4;     // product is 80
+int i = 3;
+int result = product * i; // result is 240
+
+### Division: /
