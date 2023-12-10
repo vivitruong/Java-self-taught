@@ -154,3 +154,12 @@ boolean result = true && false; // result is false
 result = false && false;        // result is false
 result = false && true;         // result is false
 result = true && true;          // result is true
+
+### Or: ||
+
+Produces a new boolean value from two boolean expressions. If either the operand on the left of the || is true or the value on the right is true, the operation is true. Otherwise it's false.
+
+boolean result = true || false; // result is true
+result = false || false;        // result is false
+result = false || true;         // result is true
+result = true || true;          // result is true
