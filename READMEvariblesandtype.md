@@ -139,3 +139,9 @@ Some characters aren't allowed alone inside the single quotes. For example, if w
 char singleQuote = '\''; // single quote
 char newLine = '\n';     // the newline character (added by pressing Enter), not the letter n
 char escape = '\\';      // the escape character must escape itself
+
+
+### Boolean
+The boolean data type represents one of two possible values: true or false.
+boolean isFast = true;
+boolean canFly = false;
