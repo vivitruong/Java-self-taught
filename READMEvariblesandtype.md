@@ -122,3 +122,20 @@ The decrement operator subtracts one from a numeric value.
 int daysUntilHoliday = 64;
 daysUntilHoliday--;
 System.out.println(daysUntilHoliday); // 63
+
+## Character char
+
+The char data type represents a single text character. It uses 16 bits of data.
+Characters are useful for inspecting single letters, but for the most part we'll use the String data type to manage text.
+
+Its literal value is a character surrounded by single quotes.
+
+char a = 'a';
+char x = 'X';
+char one = '1'; // the character '1', not the value 1!
+
+Some characters aren't allowed alone inside the single quotes. For example, if we want a single quote as our character, ''', the compiler will fail because it can't tell if the single quote is part of the value or part of the surrounding quotes. To get around the problem, some characters are represented with an escape sequence. An escape sequence always starts with \ and is followed by either the actual character or a sequence that represents the character we're trying to represent.
+
+char singleQuote = '\''; // single quote
+char newLine = '\n';     // the newline character (added by pressing Enter), not the letter n
+char escape = '\\';      // the escape character must escape itself
