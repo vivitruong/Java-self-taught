@@ -145,3 +145,12 @@ char escape = '\\';      // the escape character must escape itself
 The boolean data type represents one of two possible values: true or false.
 boolean isFast = true;
 boolean canFly = false;
+
+## And: &&
+
+Produces a new boolean value from two boolean expressions. If the operand on the left of the && is true and the operand on the right is true, the operation is true. Otherwise it's false.
+
+boolean result = true && false; // result is false
+result = false && false;        // result is false
+result = false && true;         // result is false
+result = true && true;          // result is true
