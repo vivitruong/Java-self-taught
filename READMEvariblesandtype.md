@@ -85,3 +85,18 @@ int i = 3;
 int result = product * i; // result is 240
 
 ### Division: /
+Produces a new value by dividing the operand on the left of the / by the operand on the right.
+
+long value = 100L / 2L;    // value is 50
+value = 100L / 3L;         // value is 33 without decimals
+                           // whole number types `int` and `long` discard decimal results.
+                           // the value is truncated.
+long lng = 11;             // the literal `11` is an int but it fits in a long
+long result = value / lng; // result is 3
+
+### Modulo or Remainder: %
+Produces a new value by calculating the remainder when the operand on the left of the % is divided by the operand on the right.
+int remainder = 100 % 3;    // remainder is 1
+remainder = 100 % 13;       // remainder is 9
+int i = 3;
+int result = remainder % i; // result is 0
