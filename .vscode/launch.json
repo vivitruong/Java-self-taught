@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Console",
+            "request": "launch",
+            "mainClass": "Console",
+            "projectName": "java_28b1cd39"
+        },
+        {
+            "type": "java",
             "name": "Strings",
             "request": "launch",
             "mainClass": "Strings",
