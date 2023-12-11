@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Strings",
+            "request": "launch",
+            "mainClass": "Strings",
+            "projectName": "java_28b1cd39"
+        },
+        {
+            "type": "java",
             "name": "Variables",
             "request": "launch",
             "mainClass": "Variables",
