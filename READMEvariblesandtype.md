@@ -175,3 +175,11 @@ boolean yes = true;
 boolean no = false;
 boolean result = !(yes && no || (yes || true)); // result is false
 result = !yes && no || (yes || true);           // result is true
+
+### Less Than, Less Than or Equal, Greater Than, Greater Than or Equal: <, <=, >, >=
+
+boolean result = 1 < 25; // result is true
+result = 1 <= 0;         // result is false
+result = 5 <= 5;         // result is true
+result = 3.44 > 1.2;     // result is true
+result = -5.55 >= -5.0;  // result is false
