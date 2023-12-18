@@ -116,3 +116,19 @@ Guess a fruit: kiwi
 kiwi isn't correct.
 Guess a fruit: persimmon
 You got it!
+
+### break and continue keywords
+
+All loops can be further controlled with the break and continue keywords
+
+The break keyword immediately terminates a loop when the break statement is executed, regardless of the loop's boolean condition. It "breaks out" of the code block. No further code is executed in the block and the loop no longer repeats.
+
+for(int i = 0; i< 10000; i++){
+    stout("First line in the block: " + i);
+
+    if(Math.random() > 0.9){
+        stout("breaking!");
+        break; exit the for loop code block immediatelty
+    }
+     System.out.println("Last line in the block: " + i);
+}
