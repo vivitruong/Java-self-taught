@@ -80,3 +80,39 @@ for(int i =0; i< message.length(); i++){
     }
 }
 System.out.println("Result: " + result); // Result: Grpr, Hlbt, nd Trt
+
+### more for facts
+all for clauses are optional. A for statement with no clauses in initifie loop. it loops forever.
+
+for(;;) {
+     System.out.println("prints forever");
+}
+
+The initialization and after-loop clauses can include multiple statements separated by commas.
+// two initializations
+// a two-part condition
+// and two after-loop operations
+for (int a = 10, b = 0; a > 0 && b < 10; a--, b += 2) {
+    System.out.printf("a:%s, b:%s %n", a, b);
+}
+
+a:10, b:0
+a:9, b:2
+a:8, b:4
+a:7, b:6
+a:6, b:8
+
+Clauses can also include method calls.
+Scanner consol = new Scanner(system.in);
+Stout("Guess a fruit: ");
+for (String input = console.nextLine(); !input.equals("persimmon"); input = console.nextLine()) {
+    System.out.ptintf("%s isnt correct.%nGuess a fruit: ", input);
+}
+
+System.out.printLn("You got this!")'
+Guess a fruit: apple
+apple isn't correct.
+Guess a fruit: kiwi
+kiwi isn't correct.
+Guess a fruit: persimmon
+You got it!
