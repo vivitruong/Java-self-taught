@@ -132,3 +132,14 @@ for(int i = 0; i< 10000; i++){
     }
      System.out.println("Last line in the block: " + i);
 }
+A break can also be used to jump out of a loop once we have what we need from the loop, through its a little sloppy. Here we create infitie loop that only ends when the proper input is entered.
+Scanner console = new Scanner(System.in);
+String input;
+while(true){
+    stout("Enter 1-5");
+    input = console.nextLine();
+    if (input.length == 1 && input.charAt(0) >= '1' && input.charAt(0) <= '5) {
+        break
+    }
+}
+system.out.println("Value" + input)
