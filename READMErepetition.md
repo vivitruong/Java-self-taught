@@ -68,4 +68,15 @@ for(int i = 10; i > 0; i--){
     stout(i)
 }
 
-LO
+LOOK at each other character in a string:
+In this case we need one repetion ofor each other qwhich can be determinded with "value".lenght()
+String mesage = "Grouper, halibut and trout";
+string vowels = 'eaiou';
+string result = "";
+//remove all vowels from message abd store the new string in res
+for(int i =0; i< message.length(); i++){
+    if(vowel.indedxOf(message,charAt(i)) < 0) {
+        res += message.charAt(i)
+    }
+}
+System.out.println("Result: " + result); // Result: Grpr, Hlbt, nd Trt
