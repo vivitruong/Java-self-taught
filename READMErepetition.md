@@ -51,3 +51,21 @@ for (int index = 0;               // initialize
         ) {
     System.out.println(message.charAt(index));
 }
+
+another examples:
+COUNT TO A SPECIFIC NUMBER:
+int sum = 0;
+for (int n = 0; n <= 10; n++){
+    sum+=n
+}
+
+System.out.println("Sum: " + sum); // Sum: 55
+
+COUNT DOWN:
+
+STOUT("COUNT DOWN");
+for(int i = 10; i > 0; i--){
+    stout(i)
+}
+
+LO
