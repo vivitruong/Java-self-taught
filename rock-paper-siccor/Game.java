@@ -20,20 +20,34 @@ public class Game {
         //generrate compter choice
     int random = (int) Math.floor(Math.random() * 3);
     String computerChoice = null;
-
     switch (random) {
         case 0:
-        computerChoice = "rock";
-        break;
+            computerChoice = "rock";
+            break;
         case 1:
-        computerChoice = "paper";
-        break;
+            computerChoice = "paper";
+            break;
         case 2:
-        computerChoice = "scissors";
-        break;
+            computerChoice = "scissors";
+            break;
         default: //this will never happen
-        computerChoice = null;
+            computerChoice = null;
 
+    }
+    String graphic = "LOADING";
+    for(int i = 0; i < graphic.length(); i++) {
+        System.out.println(graphic.charAt(i));
+    }
+    if (computerChoice.equalsIgnoreCase(userChoice)){
+        System.out.printf("You both picked %s, it's a tie!%n", userChoice);
+    } else if (computerChoice.equalsIgnoreCase("rock") && userChoice.equalsIgnoreCase("paper")){
+        System.out.printf("The computer pick %s and you pick %s - You win!!! Yay!%n", computerChoice, userChoice);
+    }else if (computerChoice.equalsIgnoreCase("paper") && userChoice.equalsIgnoreCase("scissors") ) {
+        System.out.printf("The computer pick %s and you pick %s - You win!!! Yay!%n", computerChoice, userChoice);
+    } else if (computerChoice.equalsIgnoreCase("scissors") && userChoice.equalsIgnoreCase("rock")){
+        System.out.printf("The computer pick %s and you pick %s - You win!!! Yay!%n", computerChoice, userChoice);
+    } else {
+        System.out.printf("The computer pick %s and you pick %s - you lose! :( %n ", computerChoice, userChoice);
     }
     }
 
