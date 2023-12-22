@@ -4,7 +4,10 @@ public class Game {
         Scanner console = new Scanner(System.in);
         String userChoice;
 
-        //variable for our validChoice
+        boolean exit = false;
+
+        do {
+             //variable for our validChoice
         boolean validChoice = false;
         //Get uSER CHOICE
         do{
@@ -49,7 +52,19 @@ public class Game {
     } else {
         System.out.printf("The computer pick %s and you pick %s - you lose! :( %n ", computerChoice, userChoice);
     }
+
+    System.out.println("Would you like to play agian? [y/n]" );
+    String playAgain = console.nextLine();
+
+    if(playAgain.equalsIgnoreCase("n")) {
+    System.out.println("Thanks for playing");
+    } else {
+        exit = false;
     }
 
 
+        } while (!exit);
+
+
+    }
 }
