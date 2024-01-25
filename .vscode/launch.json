@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Game",
+            "request": "launch",
+            "mainClass": "Game",
+            "projectName": "java_28b1cd39"
+        },
+        {
+            "type": "java",
             "name": "Repetition",
             "request": "launch",
             "mainClass": "Repetition",
