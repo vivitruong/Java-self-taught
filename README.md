@@ -1,1 +1,1 @@
-java selftaught
+Taught myself a new language !! 
