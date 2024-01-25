@@ -4,6 +4,13 @@
             "type": "java",
             "name": "App",
             "request": "launch",
+            "mainClass": "multipleclass.App",
+            "projectName": "mod2_d3741886"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
             "mainClass": "src.App",
             "projectName": "mod2_d3741886"
         },

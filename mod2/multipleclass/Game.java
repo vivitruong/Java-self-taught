@@ -11,6 +11,7 @@ public class Game {
 
     private final Scanner console = new Scanner(System.in);
     private Hero hero;
+    private Treasure treasure;
     private boolean isOver;
 
     public void run() {
@@ -19,6 +20,8 @@ public class Game {
             printWorld();
             move();
         }
+        // NEW CODE
+        printWorld();
     }
 
     private void setUp() {
@@ -30,6 +33,13 @@ public class Game {
         int y = rand.nextInt(WIDTH);
 
         hero = new Hero(name, x, y);
+
+        do {
+            x = rand.nextInt(WIDTH);
+            y = rand.nextInt(WIDTH);
+        } while (x == hero.getX() && y == hero.getY());
+
+        treasure = new Treasure(x, y);
     }
 
     private void printWorld() {
@@ -42,6 +52,8 @@ public class Game {
             for (int col = 0; col < WIDTH; col++) {
                 if (row == hero.getY() && col == hero.getX()) {
                     System.out.print(hero.getSymbol());
+                } else if(row == treasure.getY() && col == treasure.getX()) {
+                    System.out.print("T");
                 } else {
                     System.out.print(EMPTY_CHARACTER);
                 }
@@ -85,9 +97,14 @@ public class Game {
                     hero.moveRight();
                 }
                 break;
-            case 'X':
-                isOver = true;
-                break;
         }
+        if (hero.getX() < 0 || hero.getX() >= WIDTH
+            || hero.getY() < 0 || hero.getY() >= WIDTH) {
+        System.out.println(hero.getName() + " touched lava! You lose.");
+        isOver = true;
+    } else if (hero.getX() == treasure.getX() && hero.getY() == treasure.getY()) {
+        System.out.println(hero.getName() + " found the treasure! You win.");
+        isOver = true;
     }
+}
 }
