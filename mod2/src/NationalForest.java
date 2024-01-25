@@ -2,20 +2,26 @@ package src;
 
 
 public class NationalForest {
-    public String name;
-    public String location;
-    public int acres;
+    private String name;
+    private String location;
+    private int acres;
 
-    public NationalForest(){
-        this("Unknown", "Unknown", -1);
+    public String getName(){
+        return name;
     }
 
-    public NationalForest(String name) {
-        this(name, "Unknown", -1);
+    public String getLocation(){
+        return location;
     }
 
-    public NationalForest(String name, int acres) {
-        this(name, "Unknown", acres);
+    public int getAcres() {
+        return acres;
+    }
+
+    public void setAcres(int acres) {
+        if(acres > 0){
+            this.acres = acres;
+        }
     }
     public NationalForest(String name, String location, int acres){
         this.name = name;
