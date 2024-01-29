@@ -5,4 +5,11 @@ public class Spaceship  implements Vehicle{
     public void accelerate() {
         percentOfLightSpeed += (0.1 * (1.0 - percentOfLightSpeed));
     }
+
+    @Override
+    public String getVelocityMessage() {
+        return String.format("Traveling at %.2f%% the speed of light.", percentOfLightSpeed * 100.0);
+    }
+
+
 }

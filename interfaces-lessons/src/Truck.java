@@ -6,4 +6,9 @@ public class Truck implements Vehicle {
     public void accelerate() {
         kilomtersPerHour = Math.min(kilomtersPerHour + 10, MAX_KM_PER_HOUR);
     }
+
+    @Override
+    public String getVelocityMessage() {
+        return String.format("%s km/hr", kilomtersPerHour);
+    }
  }
